@@ -1,0 +1,25 @@
+{
+  "name": "chunked-encoding",
+  "version": "1.0.0",
+  "description": "Transfer Encoding Demo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sac0/transfer-encoding-demo.git"
+  },
+  "keywords": [
+    "Tansfer",
+    "encoding",
+    "chunked"
+  ],
+  "author": "github.com/sac0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sac0/transfer-encoding-demo/issues"
+  },
+  "homepage": "https://github.com/sac0/transfer-encoding-demo#readme"
+}

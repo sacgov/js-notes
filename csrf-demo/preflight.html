@@ -1,0 +1,36 @@
+
+<html>
+  <head>
+  <title>Preflight Demo</title>
+</head>
+  <body>
+  	<h1>Please Inspect Element</h1>
+    <p> Start a server at 3001 port in the same folder. We do a request http://localhost:3001 we can see the OPTIONS call being made.</p>
+  </body>
+  <script type="text/javascript">
+    var data = null;
+
+var xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+
+xhr.addEventListener("readystatechange", function () {
+  if (this.readyState === 4) {
+    console.log(this.responseText);
+  }
+});
+
+xhr.open("GET", "http://localhost:3001");
+xhr.setRequestHeader("User-Agent", "PostmanRuntime/7.16.3");
+xhr.setRequestHeader("Accept", "*/*");
+xhr.setRequestHeader("Cache-Control", "no-cache");
+xhr.setRequestHeader("Postman-Token", "d33e86d5-a435-4e87-8a2d-d55eda06abe3,f32c9799-6f3e-4b37-995e-0c49fca82451");
+xhr.setRequestHeader("Host", "localhost:3001");
+xhr.setRequestHeader("Accept-Encoding", "gzip, deflate");
+xhr.setRequestHeader("Connection", "keep-alive");
+xhr.setRequestHeader("cache-control", "no-cache");
+
+xhr.send(data);
+  </script>
+</html>
+
+<!-- {name: "cool", code: "return new Promise(resolve => {↵ // Your logic goes here↵ resolve();↵});"} -->
